@@ -5,7 +5,7 @@ body{
 }
 .card{
     display: inline-block;
-    width: 21%;
+    width: 14rem;
     
     border-radius: 20px;
     text-align: center;
