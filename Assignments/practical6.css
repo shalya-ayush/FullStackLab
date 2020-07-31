@@ -1,31 +1,31 @@
-body{
-   
+body {
     background-color: grey;
-    
 }
-.card{
+
+.card {
     display: inline-block;
     width: 14rem;
-    
     border-radius: 20px;
     text-align: center;
     padding: 10px;
-   
     margin: 10px 0.5rem;
     background-color: white;
 }
-h2{
-    color:white
-}
-img{
-    width:100%;
-    border-radius: 20px;
 
+h2 {
+    color: white
 }
-p{
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+p {
     text-align: justify;
 }
-a{
+
+a {
     text-decoration: none;
     border-radius: 20px;
     display: block;
@@ -33,6 +33,7 @@ a{
     padding: 10px;
     color: white;
 }
-a:hover{
+
+a:hover {
     background-color: teal;
 }
