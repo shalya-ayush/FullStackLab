@@ -1,0 +1,38 @@
+body{
+   
+    background-color: grey;
+    
+}
+.card{
+    display: inline-block;
+    width: 21%;
+    
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+   
+    margin: 10px 10px;
+    background-color: white;
+}
+h2{
+    color:white
+}
+img{
+    width:100%;
+    border-radius: 20px;
+
+}
+p{
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    border-radius: 20px;
+    display: block;
+    background-color: tomato;
+    padding: 10px;
+    color: white;
+}
+a:hover{
+    background-color: teal;
+}
