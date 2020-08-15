@@ -1,0 +1,31 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display : inline-block;
+    
+}
+li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    width: 200px;
+    height: auto;
+    color: white;
+}
+li a:hover{
+    background-color: white;
+    color: black;
+}
+.banner{
+    background: url("../static/practical8bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:500px ;
+}
+.banner h1{
+    float : left;
+}

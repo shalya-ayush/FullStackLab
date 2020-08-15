@@ -1,0 +1,167 @@
+* {
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.center {
+    text-align: center;
+    font-weight: bold;
+}
+
+.header {
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.banner {
+    height: 300px;
+    padding: 100px;
+    background-color: salmon;
+    color: white;
+}
+
+.section-1 {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-card img  {
+    background-color: rgb(191, 216, 49);
+    width: 90%;
+    border-radius: 50%;
+}
+
+.section-2 {
+    display: flex;
+}
+.left-section-2 h3{
+    position: sticky;
+    top: 5px;
+    background: white;
+    color: black;
+}
+
+.left-section-2 {
+    background-color: grey;
+    width: 60%;
+    height: 610px;
+    margin: 10px;
+    color: white;
+    overflow: auto;
+}
+
+.right-section-2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.column {
+    height: 200px;
+    margin: 5px;
+    color: black;
+    border: 1px solid black;
+}
+ div #col-1{
+    background: url("../static/p1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+ div #col-2{
+    background: url("../static/p2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+ div #col-3{
+    background: url("../static/p3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.rect-card {
+    display: inline-block;
+    width: 15rem;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0.5rem;
+    background-color:grey;
+}
+.rect-card img{
+    width: 100%;
+    border-radius: 20px;
+}
+.rect-card a {
+    text-decoration: none;
+    border-radius: 20px;
+    display: block;
+    background-color: tomato;
+    padding: 10px;
+    color: white;
+}
+
+.footer {
+    padding: 10px;
+    background-color: salmon;
+    color: white;
+}
+a{
+    display: block;
+    margin:  0px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color:black;
+}
+.footer a{
+    border: 2px solid black;
+    background-color: white;
+    width:15%;
+    font-size:20px;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display : inline-block;
+    
+}
+li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    width: 200px;
+    height: auto;
+    color: white;
+}
+li a:hover{
+    background-color: white;
+    color: black;
+}
+.banner{
+    background: url("../static/practical8bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:500px ;
+}
+.banner h1{
+    float : left;
+}
