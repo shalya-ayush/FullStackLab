@@ -1,0 +1,818 @@
+/* fixed */
+
+body {
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+    font-weight: bold;
+}
+
+.banner h1 {
+    float: left;
+}
+
+.circle-card img {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.rect-card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.rect-card a {
+    text-decoration: none;
+    border-radius: 20px;
+    display: block;
+    background-color: tomato;
+    padding: 10px;
+    color: white;
+}
+.rect-card p{
+    text-align: justify;
+    padding: 10px;
+}
+.show-btn , .hide-btn {
+    font-size: 25px;
+    transition:0.3s;
+    display: none;
+}
+.show-btn{
+    float: right;
+    line-height: 70px;
+    padding-right: 30px;
+}
+.header h2{
+    float:left;
+}
+#chk{
+    visibility: hidden;
+}
+
+
+a {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Breakpoint-1 (from 1076 to --- ) */
+
+@media (min-width:1200px) {
+    .header {
+        background-color: grey;
+        color:white;
+        padding: 10px;
+        margin: 10px 0px;
+        height: 70px;
+        line-height:15px
+    }
+    ul {
+        list-style-type: none;
+        float: right;
+        line-height: 30px;
+    }
+    li {
+        display: inline;
+    }
+    li a {
+        display: inline;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+        color: white;
+        transition: 0.1ms;
+
+    }
+    li a:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .banner {
+        background: url("../static/practical8bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        padding: 100px;
+        color: white;
+    }
+    .section-1 {
+        height: 250px;
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+    }
+    .section-2 {
+        display: flex;
+        width: 100%;
+        align-content: center;
+        border: 2px solid black;
+        height: 400px;
+    }
+    .left-section-2 h3 {
+        position: sticky;
+        top: 5px;
+        background: white;
+        color: black;
+    }
+    .left-section-2 {
+        background-color: grey;
+        width: 60%;
+        margin: 10px;
+        padding-left: 10px;
+        color: white;
+        overflow: auto;
+    }
+    .right-section-2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+    }
+    .column {
+        height: 200px;
+        margin: 5px;
+        color: black;
+        border: 1px solid black;
+    }
+    div #col-1 {
+        background: url("../static/p1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div #col-2 {
+        background: url("../static/p2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div #col-3 {
+        background: url("../static/p3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-3 {
+        width: 100%;
+        display: block;
+        height: 530px;
+        text-align: center;
+        padding: 10px;
+    }
+    .rect-card {
+        display: block;
+        width: 21%;
+        float: left;
+        margin: 10px;
+        border-radius: 20px;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: grey;
+    }
+    .footer {
+        padding: 10px;
+        background-color: salmon;
+        color: white;
+    }
+    .footer a {
+        display: block;
+        border: 2px solid black;
+        background-color: white;
+        font-size: 20px;
+    }
+}
+
+/* Breakpoint -2 (from 1000-1075) */
+
+@media(min-width:1000px) and (max-width:1199px) {
+    .header {
+        background-color: grey;
+        color:white;
+        padding: 10px;
+        margin: 10px 0px;
+        height: 70px;
+        line-height:15px
+    }
+    ul {
+        list-style-type: none;
+        float: right;
+        line-height: 30px;
+    }
+    li {
+        display: inline;
+    }
+    li a {
+        display: inline;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+        color: white;
+        transition: 0.1ms;
+
+    }
+    li a:hover {
+        background-color: white;
+        color: black;
+    }
+    .banner {
+        background: url("../static/practical8bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 350px;
+        padding: 100px;
+        color: white;
+        background-position: center center;
+        background-color: thistle;
+    }
+    .section-1 {
+        height: 250px;
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+    }
+    .section-2 {
+        display: flex;
+        width: 100%;
+        align-content: center;
+        border: 2px solid black;
+        height: 400px;
+    }
+    .left-section-2 h3 {
+        top: 5px;
+        background: white;
+        color: black;
+    }
+    .left-section-2 {
+        background-color: grey;
+        width: 60%;
+        margin: 10px;
+        padding-left: 10px;
+        color: white;
+        overflow: auto;
+    }
+    .right-section-2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+    }
+    .column {
+        height: 200px;
+        margin: 5px;
+        color: black;
+        border: 1px solid black;
+    }
+    div #col-1 {
+        background: url("../static/p1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div #col-2 {
+        background: url("../static/p2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div #col-3 {
+        background: url("../static/p3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-3 {
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+    .rect-card {
+        float: left;
+        width: 45%;
+        margin: 10px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        justify-content: center;
+        background-color: grey;
+    }
+    .rect-card img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .footer {
+        padding: 10px;
+        background-color: salmon;
+        color: white;
+    }
+    .footer a {
+        display: block;
+        border: 2px solid black;
+        background-color: white;
+        font-size: 20px;
+    }
+}
+
+/* Breakpoint-3 */
+
+@media(min-width:700px) and (max-width:999px) {
+    .header {
+        background-color: grey;
+        color:white;
+        padding: 10px;
+        margin: 10px 0px;
+        height: 70px;
+        line-height:15px
+    }
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+        float: right;
+    }
+    li {
+        display: block;
+    }
+    li a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 20px 0px;
+        margin: 5px;
+        color: white;
+        transition: 0.4s;
+
+    }
+    li a:hover {
+        background-color: white;
+        color: black;
+        margin: 10px;
+        padding: 20px;
+    }
+    .show-btn ,.hide-btn{
+        display: block;
+    }
+    .nav-bar{
+        position:fixed;
+        top:0;
+        right:-150%;
+        width: 100%;
+        height:100vh;
+        display:block;
+        margin:auto;
+        background-color: red;
+        transition: 0.9s;
+
+    }
+    .hide-btn{
+        position: absolute;
+        top:55px;
+        right: 55px;
+        font-size: 35px;
+        color: yellow;
+    }
+    #chk:checked ~ .nav-bar{
+        right:0;
+    }
+    .show-btn:hover{
+        font-size: 35px;
+        color:yellow;
+    }
+    .banner {
+        background: url("../static/practical8bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+        padding: 100px;
+        color: white;
+        background-position: center center;
+        background-color: thistle;
+    }
+    .section-1 {
+        display: block;
+        float: left;
+        margin: 10px;
+        width: 100%;
+    }
+    .circle-card img {
+        display: block;
+        float: left;
+        border-radius: 50%;
+        width: 40%;
+        margin-inline-start: 40px;
+    }
+    .section-2 {
+        display: flex;
+        width: 100%;
+        align-content: center;
+        border: 2px solid black;
+        height: 400px;
+    }
+    .left-section-2 h3 {
+        position: sticky;
+        top: 5px;
+        background: white;
+        color: black;
+    }
+    .left-section-2 {
+        background-color: grey;
+        width: 60%;
+        margin: 10px;
+        padding-left: 10px;
+        color: white;
+        overflow: auto;
+    }
+    .right-section-2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10px;
+    }
+    .column {
+        height: 200px;
+        margin: 5px;
+        color: black;
+        border: 1px solid black;
+    }
+    div #col-1 {
+        background: url("../static/p1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div #col-2 {
+        background: url("../static/p2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div #col-3 {
+        background: url("../static/p3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-3 {
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+    .rect-card {
+        float: left;
+        width: 43%;
+        margin-inline-start: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        justify-content: center;
+        background-color: grey;
+    }
+    .rect-card img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .footer {
+        padding: 10px;
+        background-color: salmon;
+        color: white;
+    }
+    .footer a {
+        display: block;
+        border: 2px solid black;
+        background-color: white;
+        font-size: 20px;
+    }
+}
+
+/* Breakpoint-4 */
+
+@media(min-width:430px) and (max-width:699px) {
+    .header {
+        background-color: grey;
+        color:white;
+        padding: 10px;
+        margin: 10px 0px;
+        height: 70px;
+        line-height:15px
+    }
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+        float: right;
+    }
+    li {
+        display: block;
+    }
+    li a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 20px 0;
+        margin: 5px;
+        color: white;
+        transition: 0.1ms;
+
+    }
+    li a:hover {
+        background-color: white;
+        color: black;
+        padding:15px;
+        margin: 10px;
+    }
+    .show-btn ,.hide-btn{
+        display: block;
+    }
+    .nav-bar{
+        position:fixed;
+        top:0;
+        right:-200%;
+        width: 100%;
+        height:100vh;
+        transition: 0.9s;
+        display: block;
+        margin: auto;
+        background-color: red;
+
+    }
+    .hide-btn{
+        position:absolute;
+        top:52px;
+        right:55px;
+        font-size:30px;
+        color: yellow;
+    }
+    .show-btn:hover{
+        color: yellow;
+        font-size: 35px;
+    }
+    #chk:checked ~ .nav-bar{
+        right: 0;
+    }
+    .banner {
+        background: url("../static/practical8bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        padding: 50px;
+        color: white;
+        font-size: 14px;
+        background-position: center center;
+        background-color: thistle;
+    }
+    .section-1 {
+        display: block;
+        float: left;
+        margin: 10px;
+        width: 100%;
+    }
+    .circle-card img {
+        display: block;
+        float: left;
+        border-radius: 50%;
+        width: 35%;
+        margin-inline-start: 8%;
+    }
+    .section-2 {
+        border: 2px solid black;
+        padding: 10px 0px;
+    }
+    .left-section-2 h3 {
+        background: white;
+        color: black;
+    }
+    .left-section-2 {
+        background-color: grey;
+        width: 86%;
+        margin: auto;
+        text-align: justify;
+        padding: 10px;
+        color: white;
+        height: 350px;
+        overflow: auto;
+    }
+    .right-section-2 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
+    .column {
+        width: 100%;
+        height: 150px;
+        margin: 5px 0px;
+        color: black;
+        border: 1px solid black;
+    }
+    div #col-1 {
+        background: url("../static/p1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div #col-2 {
+        background: url("../static/p2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div #col-3 {
+        background: url("../static/p3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-3 {
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+    .rect-card {
+        float: left;
+        width: 95%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        justify-content: center;
+        background-color: grey;
+    }
+    .rect-card img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .footer {
+        padding: 10px;
+        background-color: salmon;
+        color: white;
+    }
+    .footer a {
+        display: block;
+        border: 2px solid black;
+        background-color: white;
+        font-size: 20px;
+    }
+}
+
+/* Breakpoint-5 */
+@media(max-width:429px) {
+    .header {
+        background-color: grey;
+        color:white;
+        padding: 10px;
+        margin: 10px 0px;
+        height: 70px;
+        line-height:15px
+    }
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+        float: right;
+    }
+    li {
+        display: block;
+    }
+    li a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px 0;
+        margin: 5px;
+        color: white;
+        transition: 0.4s;
+
+    }
+    li a:hover {
+        background-color:white;
+        padding: 10px;
+        margin: 10px;
+        color: black;
+    }
+    .show-btn ,.hide-btn{
+        display: block;
+    }
+    .hide-btn{
+        top:50px;
+        position: absolute;
+        right: 50px;
+    }
+    .nav-bar{
+        position:fixed;
+        top:0;
+        right:-300%;
+        width:100%;
+        display: block;
+        margin: auto;
+        height:100vh;
+        transition: 0.9s;
+        background-color: red;
+        color: white;
+
+    }
+    #chk:checked ~ .nav-bar{
+        right: 0;
+    }
+    .show-btn:hover{
+        color: black;
+        font-size: 30px;
+        }
+        
+    .banner {
+        background: url("../static/practical8bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80px;
+        padding: 50px;
+        color: white;
+        font-size: 12px;
+        background-position: center center;
+        background-color: thistle;
+    }
+    .section-1 {
+        display: block;
+        float: left;
+        margin: 10px;
+        width: 100%;
+    }
+    .circle-card img {
+        display: block;
+        float: left;
+        border-radius: 50%;
+        width: 65%;
+        margin-inline-start: 15%;
+    }
+    .section-2 {
+        border: 2px solid black;
+        padding:10px 0px;
+    }
+    .left-section-2 h3 {
+        background: white;
+        color: black;
+    }
+    .left-section-2 {
+        display: block;
+        margin: auto;
+        background-color: grey;
+        width: 84%;
+        text-align: left;
+        padding: 10px;
+        color: white;
+        height: 250px;
+        overflow: auto;
+    }
+    .right-section-2 {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        width: 90%;
+    }
+    .column {
+        width: 100%;
+        height: 150px;
+        margin: 5px 0px;
+        color: black;
+        border: 1px solid black;
+    }
+    div #col-1 {
+        background: url("../static/p1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div #col-2 {
+        background: url("../static/p2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div #col-3 {
+        background: url("../static/p3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-3 {
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+    .rect-card {
+        float: left;
+        width: 95%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        justify-content: center;
+        background-color: grey;
+    }
+    
+    .rect-card img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .footer {
+        padding: 10px;
+        background-color: salmon;
+        color: white;
+    }
+    .footer a {
+        display: block;
+        border: 2px solid black;
+        background-color: white;
+        font-size: 20px;
+    }
+}
