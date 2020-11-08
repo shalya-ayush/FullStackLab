@@ -1,13 +1,13 @@
-//selector
+
 var todoInput = document.querySelector(".todo-input");
 var todoButton = document.querySelector(".todo-button");
 var todoList = document.querySelector(".todo-list");
 
-//EventHandler
+
 todoButton.onclick = create;
 todoList.onclick = checkdelete;
 
-//Functions
+
 function create(e) {
     e.preventDefault();
     var newDiv = document.createElement("div");
